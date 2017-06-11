@@ -51,11 +51,7 @@ class HomeController extends Controller
 
 		$sortedCategories = $sortedCategories->values()->take(5);
 
-		$students = Student::with('skills')->get();
-		$sortedStudents = $students->sortBy(function($student){
-			return $student->skills->count();
-		});
 
-        return view('dashboard.index', ['agencies' => $sortedAgencies, 'categories' => $sortedCategories, 'pay' => $avgPay, 'students' => $students]);
+        return view('dashboard.index', ['agencies' => $sortedAgencies, 'categories' => $sortedCategories, 'pay' => $avgPay]);
     }
 }
