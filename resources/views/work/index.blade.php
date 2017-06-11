@@ -4,7 +4,7 @@
     @include('includes.status_alert')
     <div class="row">
         <div class="col-md-6">
-            <h1>Agentúry</h1>
+            <h1>Brigády</h1>
         </div>
         <div class="col-md-6 text-right">
             <a href="/works/create" class="btn btn-success">Pridať</a>
